@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  book-app
 //
-//  Created by Brandon Sugarman on 9/12/18.
-//  Copyright © 2018 Brandon Sugarman. All rights reserved.
+//  Created by egg on 9/12/18.
+//  Copyright © 2018 egg. All rights reserved.
 //
 
 import UIKit
