@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  book-app
 //
-//  Created by Brandon Sugarman on 9/12/18.
+//  Created by DIVYA GANESAN + LAUREN LIN on 9/12/18.
 //  Copyright © 2018 Brandon Sugarman. All rights reserved.
 //
 
