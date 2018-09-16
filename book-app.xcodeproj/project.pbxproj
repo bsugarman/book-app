@@ -12,6 +12,10 @@
 		85126A17214965E000FA62DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85126A15214965E000FA62DF /* Main.storyboard */; };
 		85126A19214965E100FA62DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85126A18214965E100FA62DF /* Assets.xcassets */; };
 		85126A1C214965E100FA62DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85126A1A214965E100FA62DF /* LaunchScreen.storyboard */; };
+		858426AF214F1F7700D7E54D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426AE214F1F7700D7E54D /* LoginViewController.swift */; };
+		858426B1214F1FAE00D7E54D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426B0214F1FAE00D7E54D /* SignUpViewController.swift */; };
+		858426B3214F20A000D7E54D /* ShopFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426B2214F20A000D7E54D /* ShopFeedViewController.swift */; };
+		858426B5214F251900D7E54D /* ListingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426B4214F251900D7E54D /* ListingsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		85126A18214965E100FA62DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85126A1B214965E100FA62DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85126A1D214965E100FA62DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		858426AE214F1F7700D7E54D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		858426B0214F1FAE00D7E54D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		858426B2214F20A000D7E54D /* ShopFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopFeedViewController.swift; sourceTree = "<group>"; };
+		858426B4214F251900D7E54D /* ListingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				85126A11214965E000FA62DF /* AppDelegate.swift */,
 				85126A13214965E000FA62DF /* ViewController.swift */,
 				85126A15214965E000FA62DF /* Main.storyboard */,
+				858426B4214F251900D7E54D /* ListingsTableViewCell.swift */,
+				858426B2214F20A000D7E54D /* ShopFeedViewController.swift */,
+				858426B0214F1FAE00D7E54D /* SignUpViewController.swift */,
+				858426AE214F1F7700D7E54D /* LoginViewController.swift */,
 				85126A18214965E100FA62DF /* Assets.xcassets */,
 				85126A1A214965E100FA62DF /* LaunchScreen.storyboard */,
 				85126A1D214965E100FA62DF /* Info.plist */,
@@ -135,7 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858426AF214F1F7700D7E54D /* LoginViewController.swift in Sources */,
 				85126A14214965E000FA62DF /* ViewController.swift in Sources */,
+				858426B5214F251900D7E54D /* ListingsTableViewCell.swift in Sources */,
+				858426B3214F20A000D7E54D /* ShopFeedViewController.swift in Sources */,
+				858426B1214F1FAE00D7E54D /* SignUpViewController.swift in Sources */,
 				85126A12214965E000FA62DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
