@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  book-app
 //
-//  Created by egg on 9/12/18.
-//  Copyright © 2018 egg. All rights reserved.
+//  Created by DIVYA GANESAN + LAUREN LIN on 9/12/18.
+//  Copyright © 2018 DIVYA GANESAN + LAUREN LIN. All rights reserved.
 //
 
 import UIKit
