@@ -75,6 +75,33 @@
             </objects>
             <point key="canvasLocation" x="817" y="317"/>
         </scene>
+        <!--Add Listing View Controller-->
+        <scene sceneID="APW-97-BiS">
+            <objects>
+                <viewController storyboardIdentifier="addListing" id="8le-NY-P5O" customClass="AddListingViewController" customModule="book_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="csE-3L-cRn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhD-UN-adA">
+                                <rect key="frame" x="16" y="32" width="30" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="backButton:" destination="8le-NY-P5O" eventType="touchUpInside" id="3SB-iv-mvG"/>
+                                    <segue destination="z0U-R4-Rzc" kind="show" id="EIH-3L-oM1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dv9-TL-XmZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGc-TT-xlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="-405"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="nXm-Hp-Bi5">
             <objects>
@@ -89,6 +116,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="&gt;"/>
                                 <connections>
+                                    <action selector="goToShop:" destination="5iz-Hu-vAe" eventType="touchUpInside" id="0Mg-bv-Qk8"/>
                                     <segue destination="z0U-R4-Rzc" kind="show" id="0Hc-f3-Ed2"/>
                                 </connections>
                             </button>
@@ -138,6 +166,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMu-SB-Deg">
+                                <rect key="frame" x="329" y="30" width="30" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="goToListing:" destination="z0U-R4-Rzc" eventType="touchUpInside" id="oDO-Qe-Y3u"/>
+                                    <segue destination="8le-NY-P5O" kind="show" id="RR2-lx-Djp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="knk-i6-dW2"/>
@@ -148,4 +186,7 @@
             <point key="canvasLocation" x="1613.5999999999999" y="-405.24737631184411"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0Hc-f3-Ed2"/>
+    </inferredMetricsTieBreakers>
 </document>

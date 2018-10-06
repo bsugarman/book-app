@@ -1,14 +1,14 @@
 //
-//  LoginViewController.swift
+//  AddListingViewController.swift
 //  book-app
 //
-//  Created by Brandon Sugarman on 9/17/18.
+//  Created by DIVYA AND LAUREN on 10/6/18.
 //  Copyright © 2018 Brandon Sugarman. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class AddListingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,18 +16,20 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backButton(_ sender: UIButton) {
+        let shopFeed = self.storyboard?.instantiateViewController(withIdentifier: "shop")as? ViewController
+        self.present(shopFeed!, animated:false)
+    
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goToShop(_ sender: UIButton) {
-        let shopFeed = self.storyboard?.instantiateViewController(withIdentifier: "shop")as? ViewController
-        self.present(shopFeed!, animated:false)
-    }
-    
-    
+
     /*
     // MARK: - Navigation
 

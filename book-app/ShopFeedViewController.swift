@@ -17,6 +17,12 @@ class ShopFeedViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func goToListing(_ sender: UIButton) {
+        let addListing = self.storyboard?.instantiateViewController(withIdentifier: "addListing")as? ViewController
+        self.present(addListing!, animated:false)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
