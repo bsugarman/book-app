@@ -21,7 +21,11 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func goToShop(_ sender: UIButton) {
+        let shopFeed = self.storyboard?.instantiateViewController(withIdentifier: "shop")as? ViewController
+        self.present(shopFeed!, animated:false)
+    }
+    
     /*
     // MARK: - Navigation
 

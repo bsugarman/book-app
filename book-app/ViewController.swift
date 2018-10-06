@@ -20,6 +20,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func goToLogin(_ sender: UIButton) {
+        let login = self.storyboard?.instantiateViewController(withIdentifier: "home")as? ViewController
+        self.present(login!, animated:false)
+    }
+    
+    @IBAction func goToSignUp(_ sender: UIButton) {
+        let signUp = self.storyboard?.instantiateViewController(withIdentifier: "signUp")as? ViewController
+        self.present(signUp!, animated:false)
+        
+    }
+    
+    
 }
 

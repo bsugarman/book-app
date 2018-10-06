@@ -24,6 +24,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
+                                    <action selector="goToSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Oc-St-f61"/>
                                     <segue destination="gXf-GG-bGg" kind="show" id="UDi-1E-hA4"/>
                                 </connections>
                             </button>
@@ -33,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="5iz-Hu-vAe" kind="show" id="wiV-fe-tqg"/>
+                                    <action selector="goToLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JYU-gC-Xli"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJr-IK-Oh0">
@@ -55,7 +56,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="HPs-5J-G3N">
             <objects>
-                <viewController id="gXf-GG-bGg" customClass="SignUpViewController" customModule="book_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUp" id="gXf-GG-bGg" customClass="SignUpViewController" customModule="book_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFq-uX-kDw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,6 +66,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="goToShop:" destination="gXf-GG-bGg" eventType="touchUpInside" id="rC8-Kj-BkJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thz-l5-bhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="817" y="-405"/>
+            <point key="canvasLocation" x="816.79999999999995" y="-405.24737631184411"/>
         </scene>
         <!--Shop Feed View Controller-->
         <scene sceneID="4a3-eB-wfJ">
