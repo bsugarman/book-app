@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import FirebaseAuth
+import FirebaseAuth //for usernames and passwords
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

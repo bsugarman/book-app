@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class ShopFeedViewController: UIViewController {
-
+    var ref: DatabaseReference! //create variable reference with type database reference, hit command b to check
     override func viewDidLoad() {
+        ref = Database.database().reference() //have to do to use firebase to access from any class
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
