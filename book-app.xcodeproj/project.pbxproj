@@ -19,6 +19,7 @@
 		858426B5214F251900D7E54D /* ListingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426B4214F251900D7E54D /* ListingsTableViewCell.swift */; };
 		FE0010CF21692E0300282529 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE0010CE21692E0300282529 /* GoogleService-Info.plist */; };
 		FE0010D3216AC3C400282529 /* UsefulFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0010D2216AC3C400282529 /* UsefulFunctions.swift */; };
+		FE0010D5216AC6AB00282529 /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0010D4216AC6AB00282529 /* AddListingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FA82E496EF3AFD57D8847FE1 /* Pods-book-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-book-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-book-app/Pods-book-app.release.xcconfig"; sourceTree = "<group>"; };
 		FE0010CE21692E0300282529 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE0010D2216AC3C400282529 /* UsefulFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulFunctions.swift; sourceTree = "<group>"; };
+		FE0010D4216AC6AB00282529 /* AddListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				858426B2214F20A000D7E54D /* ShopFeedViewController.swift */,
 				858426B0214F1FAE00D7E54D /* SignUpViewController.swift */,
 				858426AE214F1F7700D7E54D /* LoginViewController.swift */,
+				FE0010D4216AC6AB00282529 /* AddListingViewController.swift */,
 				85126A18214965E100FA62DF /* Assets.xcassets */,
 				85126A1A214965E100FA62DF /* LaunchScreen.storyboard */,
 				85126A1D214965E100FA62DF /* Info.plist */,
@@ -228,6 +231,7 @@
 				858426AF214F1F7700D7E54D /* LoginViewController.swift in Sources */,
 				85126A14214965E000FA62DF /* ViewController.swift in Sources */,
 				858426B5214F251900D7E54D /* ListingsTableViewCell.swift in Sources */,
+				FE0010D5216AC6AB00282529 /* AddListingViewController.swift in Sources */,
 				858426B3214F20A000D7E54D /* ShopFeedViewController.swift in Sources */,
 				FE0010D3216AC3C400282529 /* UsefulFunctions.swift in Sources */,
 				858426B1214F1FAE00D7E54D /* SignUpViewController.swift in Sources */,

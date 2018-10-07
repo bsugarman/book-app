@@ -2,7 +2,7 @@
 //  AddListingViewController.swift
 //  book-app
 //
-//  Created by DIVYA AND LAUREN on 10/6/18.
+//  Created by Divya Ganesan on 10/7/18.
 //  Copyright © 2018 Brandon Sugarman. All rights reserved.
 //
 
@@ -15,14 +15,6 @@ class AddListingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func backButton(_ sender: UIButton) {
-        let shopFeed = self.storyboard?.instantiateViewController(withIdentifier: "shop")as? ViewController
-        self.present(shopFeed!, animated:false)
-    
-    }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
