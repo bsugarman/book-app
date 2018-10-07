@@ -25,7 +25,6 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="goToSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Oc-St-f61"/>
-                                    <segue destination="gXf-GG-bGg" kind="show" id="UDi-1E-hA4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mO-77-172">
@@ -94,7 +93,6 @@
                                 <state key="normal" title="&lt;"/>
                                 <connections>
                                     <action selector="backButton:" destination="8le-NY-P5O" eventType="touchUpInside" id="3SB-iv-mvG"/>
-                                    <segue destination="z0U-R4-Rzc" kind="show" id="EIH-3L-oM1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,7 +119,6 @@
                                 <state key="normal" title="&gt;"/>
                                 <connections>
                                     <action selector="goToShop:" destination="5iz-Hu-vAe" eventType="touchUpInside" id="0Mg-bv-Qk8"/>
-                                    <segue destination="z0U-R4-Rzc" kind="show" id="0Hc-f3-Ed2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,7 +174,6 @@
                                 <state key="normal" title="&gt;"/>
                                 <connections>
                                     <action selector="goToListing:" destination="z0U-R4-Rzc" eventType="touchUpInside" id="oDO-Qe-Y3u"/>
-                                    <segue destination="8le-NY-P5O" kind="show" id="RR2-lx-Djp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -190,7 +186,4 @@
             <point key="canvasLocation" x="1613.5999999999999" y="-405.24737631184411"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="0Hc-f3-Ed2"/>
-    </inferredMetricsTieBreakers>
 </document>
