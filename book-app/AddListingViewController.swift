@@ -8,28 +8,128 @@
 
 import UIKit
 
-class AddListingViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+class AddListingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
 
-    /*
-    // MARK: - Navigation
+    @IBOutlet weak var bookImage: UIImageView!
+    var imagePicker: UIImagePickerController!
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(AddListingViewController.tapDetected))
+        imagePicker = UIImagePickerController()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        imagePicker.delegate = self
+        self.bookImage.isUserInteractionEnabled = true
+        self.bookImage.addGestureRecognizer(singleTap)
+        
     }
-    */
-
+    
+    
+    
+    //============================================================================================================================================================
+    
+    //////
+    //
+    //PROFILE PICTURE FUNCTIONS
+    //
+    /////
+    
+    
+    
+    //Action
+    @objc func tapDetected() {
+ 
+        
+        
+        let alertController : UIAlertController = UIAlertController(title: "Title", message: "Select Camera or Photo Library", preferredStyle: .actionSheet)
+        let cameraAction : UIAlertAction = UIAlertAction(title: "Camera", style: .default, handler: {(cameraAction) in
+            print("camera Selected...")
+            
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) == true {
+                
+                self.imagePicker.sourceType = .camera
+                self.present()
+                
+            }else{
+                self.present(self.showAlert(Title: "Title", Message: "Camera is not available on this Device or accesibility has been revoked!"), animated: true, completion: nil)
+                
+            }
+            
+        })
+        
+        let libraryAction : UIAlertAction = UIAlertAction(title: "Photo Library", style: .default, handler: {(libraryAction) in
+            
+            print("Photo library selected....")
+            
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) == true {
+                
+                self.imagePicker.sourceType = .photoLibrary
+                self.present()
+                
+            }else{
+                
+                self.present(self.showAlert(Title: "Title", Message: "Photo Library is not available on this Device or accesibility has been revoked!"), animated: true, completion: nil)
+            }
+        })
+        
+        let cancelAction : UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel , handler: {(cancelActn) in
+            print("Cancel action was pressed")
+        })
+        
+        alertController.addAction(cameraAction)
+        
+        alertController.addAction(libraryAction)
+        
+        alertController.addAction(cancelAction)
+        
+        alertController.popoverPresentationController?.sourceView = view
+        alertController.popoverPresentationController?.sourceRect = view.frame
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+        
+        
+    }
+    
+    func present(){
+        
+        self.present(imagePicker, animated: true, completion: nil)
+        
+    }
+    
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        print("info of the pic reached :\(info) ")
+        self.imagePicker.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
+    //Show Alert
+    
+    
+    func showAlert(Title : String!, Message : String!)  -> UIAlertController {
+        
+        let alertController : UIAlertController = UIAlertController(title: Title, message: Message, preferredStyle: .alert)
+        let okAction : UIAlertAction = UIAlertAction(title: "Ok", style: .default) { (alert) in
+            print("User pressed ok function")
+            
+        }
+        
+        alertController.addAction(okAction)
+        alertController.popoverPresentationController?.sourceView = view
+        alertController.popoverPresentationController?.sourceRect = view.frame
+        
+        return alertController
+    }
+    
 }
+
+
+
+

@@ -19,8 +19,8 @@ class ShopFeedViewController: UIViewController {
     }
     
     @IBAction func goToListing(_ sender: UIButton) {
-        let addListing = self.storyboard?.instantiateViewController(withIdentifier: "addListing")as? ViewController
-        self.present(addListing!, animated:false)
+        let addListing = self.storyboard?.instantiateViewController(withIdentifier: "addListing")as! AddListingViewController
+        self.present(addListing, animated:false)
     }
     
 

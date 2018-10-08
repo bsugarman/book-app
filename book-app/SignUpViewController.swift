@@ -23,8 +23,8 @@ class SignUpViewController: UIViewController {
     
     //figure out how to make this a class function in the future
     @IBAction func goToShop(_ sender: UIButton) {
-        let shop = self.storyboard?.instantiateViewController(withIdentifier: "shop")as? ViewController
-        self.present(shop!, animated:false)
+        let shop = self.storyboard?.instantiateViewController(withIdentifier: "shop")as! ShopFeedViewController
+        self.present(shop, animated:false)
     }
     
     /*

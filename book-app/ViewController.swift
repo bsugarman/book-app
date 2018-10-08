@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goToSignUp(_ sender: UIButton) {
-        let signUp = self.storyboard?.instantiateViewController(withIdentifier: "signUp")as? ViewController
-        self.present(signUp!, animated:false)
+        let signUp = self.storyboard?.instantiateViewController(withIdentifier: "signUp") as! SignUpViewController 
+        self.present(signUp, animated:false)
         
     }
 
