@@ -1,20 +1,23 @@
 //
-//  ListingsTableViewCell.swift
-//  book-app
+//  CustomTableViewCell.swift
+//  
 //
-//  Created by Brandon Sugarman on 9/17/18.
-//  Copyright © 2018 Brandon Sugarman. All rights reserved.
+//  Created by Divya Ganesan on 11/3/18.
 //
 
 import UIKit
 
-class ListingsTableViewCell: UITableViewCell {
+class CustomTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        var image: UIImage = UIImage(named: "cat.jpg")!
         // Initialization code
+        testImage.image = image
     }
 
+    @IBOutlet weak var testImage: UIImageView!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

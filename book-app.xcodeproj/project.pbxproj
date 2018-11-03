@@ -16,10 +16,13 @@
 		858426AF214F1F7700D7E54D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426AE214F1F7700D7E54D /* LoginViewController.swift */; };
 		858426B1214F1FAE00D7E54D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426B0214F1FAE00D7E54D /* SignUpViewController.swift */; };
 		858426B3214F20A000D7E54D /* ShopFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426B2214F20A000D7E54D /* ShopFeedViewController.swift */; };
-		858426B5214F251900D7E54D /* ListingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858426B4214F251900D7E54D /* ListingsTableViewCell.swift */; };
 		FE0010CF21692E0300282529 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE0010CE21692E0300282529 /* GoogleService-Info.plist */; };
 		FE0010D3216AC3C400282529 /* UsefulFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0010D2216AC3C400282529 /* UsefulFunctions.swift */; };
 		FE0010D5216AC6AB00282529 /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0010D4216AC6AB00282529 /* AddListingViewController.swift */; };
+		FEC9F31C218E294900A91DB3 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9F31A218E294900A91DB3 /* CustomTableViewCell.swift */; };
+		FEC9F31D218E334C00A91DB3 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC9F31B218E294900A91DB3 /* CustomTableViewCell.xib */; };
+		FEC9F31E218E335200A91DB3 /* CustomTableViewCell.swift in Resources */ = {isa = PBXBuildFile; fileRef = FEC9F31A218E294900A91DB3 /* CustomTableViewCell.swift */; };
+		FEC9F320218E35D700A91DB3 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEC9F31F218E35D700A91DB3 /* cat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +38,13 @@
 		858426AE214F1F7700D7E54D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		858426B0214F1FAE00D7E54D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		858426B2214F20A000D7E54D /* ShopFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopFeedViewController.swift; sourceTree = "<group>"; };
-		858426B4214F251900D7E54D /* ListingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsTableViewCell.swift; sourceTree = "<group>"; };
 		FA82E496EF3AFD57D8847FE1 /* Pods-book-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-book-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-book-app/Pods-book-app.release.xcconfig"; sourceTree = "<group>"; };
 		FE0010CE21692E0300282529 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE0010D2216AC3C400282529 /* UsefulFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulFunctions.swift; sourceTree = "<group>"; };
 		FE0010D4216AC6AB00282529 /* AddListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewController.swift; sourceTree = "<group>"; };
+		FEC9F31A218E294900A91DB3 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTableViewCell.swift; path = "/Users/divyaganesan/Desktop/book-app/book-app/CustomTableViewCell.swift"; sourceTree = "<absolute>"; };
+		FEC9F31B218E294900A91DB3 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomTableViewCell.xib; path = "/Users/divyaganesan/Desktop/book-app/book-app/CustomTableViewCell.xib"; sourceTree = "<absolute>"; };
+		FEC9F31F218E35D700A91DB3 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 		85126A05214965DF00FA62DF = {
 			isa = PBXGroup;
 			children = (
+				FEC9F31F218E35D700A91DB3 /* cat.jpg */,
 				85126A10214965E000FA62DF /* book-app */,
 				85126A0F214965E000FA62DF /* Products */,
 				96E9BDA438CAD25D0F16C4EF /* Pods */,
@@ -75,11 +81,12 @@
 		85126A10214965E000FA62DF /* book-app */ = {
 			isa = PBXGroup;
 			children = (
+				FEC9F31A218E294900A91DB3 /* CustomTableViewCell.swift */,
+				FEC9F31B218E294900A91DB3 /* CustomTableViewCell.xib */,
 				85126A11214965E000FA62DF /* AppDelegate.swift */,
 				FE0010D2216AC3C400282529 /* UsefulFunctions.swift */,
 				85126A13214965E000FA62DF /* ViewController.swift */,
 				85126A15214965E000FA62DF /* Main.storyboard */,
-				858426B4214F251900D7E54D /* ListingsTableViewCell.swift */,
 				858426B2214F20A000D7E54D /* ShopFeedViewController.swift */,
 				858426B0214F1FAE00D7E54D /* SignUpViewController.swift */,
 				858426AE214F1F7700D7E54D /* LoginViewController.swift */,
@@ -170,9 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				85126A1C214965E100FA62DF /* LaunchScreen.storyboard in Resources */,
+				FEC9F320218E35D700A91DB3 /* cat.jpg in Resources */,
 				85126A19214965E100FA62DF /* Assets.xcassets in Resources */,
 				85126A17214965E000FA62DF /* Main.storyboard in Resources */,
 				FE0010CF21692E0300282529 /* GoogleService-Info.plist in Resources */,
+				FEC9F31D218E334C00A91DB3 /* CustomTableViewCell.xib in Resources */,
+				FEC9F31E218E335200A91DB3 /* CustomTableViewCell.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +240,7 @@
 			files = (
 				858426AF214F1F7700D7E54D /* LoginViewController.swift in Sources */,
 				85126A14214965E000FA62DF /* ViewController.swift in Sources */,
-				858426B5214F251900D7E54D /* ListingsTableViewCell.swift in Sources */,
+				FEC9F31C218E294900A91DB3 /* CustomTableViewCell.swift in Sources */,
 				FE0010D5216AC6AB00282529 /* AddListingViewController.swift in Sources */,
 				858426B3214F20A000D7E54D /* ShopFeedViewController.swift in Sources */,
 				FE0010D3216AC3C400282529 /* UsefulFunctions.swift in Sources */,

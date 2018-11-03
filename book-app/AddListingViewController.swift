@@ -23,7 +23,7 @@ class AddListingViewController: UIViewController, UIImagePickerControllerDelegat
 
         imagePicker.delegate = self
         self.bookImage.isUserInteractionEnabled = true
-        self.bookImage.addGestureRecognizer(singleTap)
+        self.bookImage.addGestureRecognizer(singleTap) //of type UI Gesture Recognizer
         
     }
     
