@@ -7,14 +7,40 @@
 //
 
 import UIKit
+import Firebase
 
 class AddListingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    var ref:DatabaseReference!
+    //! is an optional node, object of type node
 
     @IBOutlet weak var bookImage: UIImageView!
     var imagePicker: UIImagePickerController!
     
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var priceField: UITextField!
+    @IBOutlet weak var conditionField: UITextField!
+    @IBOutlet weak var noteStatusField: UITextField!
+    @IBOutlet weak var descriptionField: UITextView!
+    
+    @IBAction func postButton(_ sender: UIButton) {
+        
+    }
+    
+    
     override func viewDidLoad() {
+        //write to firebase
+        ref = Database.database().reference().child("Books")
+        //points to url of database
+        
+        
+        
+        
+        
+        
+        
+        
         
         super.viewDidLoad()
         

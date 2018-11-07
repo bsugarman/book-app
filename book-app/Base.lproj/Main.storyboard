@@ -142,12 +142,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DD-9v-lG5">
+                                <rect key="frame" x="164" y="602" width="50" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButton:" destination="8le-NY-P5O" eventType="touchUpInside" id="p4c-lD-dBk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dv9-TL-XmZ"/>
                     </view>
                     <connections>
                         <outlet property="bookImage" destination="x2o-tN-Q4P" id="W26-Ne-g5r"/>
+                        <outlet property="conditionField" destination="HUz-pg-cNz" id="iaj-ny-zRg"/>
+                        <outlet property="descriptionField" destination="Z6k-L5-J1w" id="qH1-B9-1Aq"/>
+                        <outlet property="noteStatusField" destination="9u5-5v-KrO" id="7I8-mb-R9s"/>
+                        <outlet property="priceField" destination="h6C-y3-BJr" id="3DV-Df-7Rt"/>
+                        <outlet property="titleField" destination="MDA-IT-NbY" id="Fat-5C-mC1"/>
+                        <outlet property="usernameField" destination="ifM-fJ-QsF" id="Rq6-Tr-24S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGc-TT-xlr" userLabel="First Responder" sceneMemberID="firstResponder"/>

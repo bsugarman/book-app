@@ -11,9 +11,9 @@ class CustomTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        var image: UIImage = UIImage(named: "cat.jpg")!
+        //var image: UIImage = UIImage(named: "cat.jpg")!
         // Initialization code
-        testImage.image = image
+        //testImage.image = image
     }
 
     @IBOutlet weak var testImage: UIImageView!
