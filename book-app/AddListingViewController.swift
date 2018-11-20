@@ -25,7 +25,7 @@ class AddListingViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var descriptionField: UITextView!
     
     @IBAction func postButton(_ sender: UIButton) {
-        
+        ref.childByAutoId().setValue([titleField.text, usernameField.text, priceField.text, conditionField.text, noteStatusField.text, descriptionField.text])
     }
     
     
