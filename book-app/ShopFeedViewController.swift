@@ -11,8 +11,15 @@ import Firebase
 
 class ShopFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var ref: DatabaseReference! //create variable reference with type database reference, hit command b to check
+    var bookInfoArray: Array<Array<String>>!
     override func viewDidLoad() {
-        ref = Database.database().reference() //have to do to use firebase to access from any class
+        ref = Database.database().reference().child("Books") //have to do to use firebase to access from any class
+        ref.observeSingleEvent(of: DataEventType.value, with: {(snapshot) in
+            for bookID in snapshot.children.allObjects as! [DataSnapshot] {
+                print(type(of:bookID.value!))
+                
+            }
+        })
         super.viewDidLoad()
         registerTableViewCells()
         tableView.rowHeight = UITableViewAutomaticDimension
