@@ -22,5 +22,12 @@ class CustomTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBOutlet weak var bookTitle: UILabel!
+    @IBOutlet weak var bookSeller: UILabel!
+    @IBOutlet weak var bookSubject: UILabel!
+    @IBOutlet weak var bookPrice: UILabel!
+    
+    
 
 }

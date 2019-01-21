@@ -9,22 +9,35 @@
 import UIKit
 import Firebase
 
+
 class ShopFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var ref: DatabaseReference! //create variable reference with type database reference, hit command b to check
-    var bookInfoArray: Array<Array<String>>!
+    var library = [[String]]()
+    var count = 0
+    
     override func viewDidLoad() {
+        tableView.dataSource = self
+        tableView.delegate = self
         ref = Database.database().reference().child("Books") //have to do to use firebase to access from any class
         ref.observeSingleEvent(of: DataEventType.value, with: {(snapshot) in
+            
             for bookID in snapshot.children.allObjects as! [DataSnapshot] {
                 var tempArray = NSMutableArray(array: bookID.value as! NSArray)
                 
                 if let bookArray = tempArray as NSArray as? [String] {
                     
                     // Use swiftArray here
-                    print(bookArray)
+                    print(type(of: bookArray))
+                    self.library.append(bookArray)
+                    /*
+                    if bookArray.first != nil {
+                    print(type(of: bookArray))
+                    }
+                    */
                 }
                 
             }
+            print(self.library)
         })
         super.viewDidLoad()
         registerTableViewCells()
@@ -36,11 +49,12 @@ class ShopFeedViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return library.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as? CustomTableViewCell
+        //cell?.bookTitle.text = library[count][0]
         return cell!
         
     }

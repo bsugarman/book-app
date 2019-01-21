@@ -26,6 +26,9 @@ class AddListingViewController: UIViewController, UIImagePickerControllerDelegat
     
     @IBAction func postButton(_ sender: UIButton) {
         ref.childByAutoId().setValue([titleField.text, usernameField.text, priceField.text, conditionField.text, noteStatusField.text, descriptionField.text])
+        
+        let shopFeed = self.storyboard?.instantiateViewController(withIdentifier: "shop")as! ShopFeedViewController
+        self.present(shopFeed, animated:false)
     }
     
     
